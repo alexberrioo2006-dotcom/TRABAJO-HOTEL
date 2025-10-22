@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA</title>
+</head>
+<body>
+    <h1>HAGA SU RESERVA</h1>
+    <form action="procesareserva.php" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+        <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" maxlength="100" id="nombre" name="Nombre" placeholder="Escriba su nombre aqui">
+        </p>
+        <p>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" maxlength="100" id="apellidos" name="Apellidos" placeholder="Escriba aqui su apellido">
+        </p>
+        <p>
+            <label for="dni">DNI: </label>
+            <input type="text" maxlength="10" id="dni" name="DNI" placeholder="DNI con Letra">
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de su estancia</legend>
+        <p>
+            <label for="individual">Individual: </label>
+            <input type="radio" value="1" checked id="individual" name="habitación">
+            <label for="doble">Doble: </label>
+            <input type="radio" value="2" checked id="doble" name="habitación">
+            <label for="suite">Suite: </label>
+            <input type="radio" value="3" checked id="suite" name="habitación">
+        </p>
+        <p>
+            <label for="personas">Personas: </label>
+            <select name="personas" id="personas">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+        </p>
+        <p>
+            <label for="mascotas">LLevo Mascotas:</label>
+            <input type="checkbox" name="LLevo Mascotas" id="mascotas">
+        </p>
+        <p>
+            <label for="llegada">Fecha de llegada</label>
+            <input type="date" name="Fecha de llegada" id="llegada">
+        </p>
+        <p>
+            <label for="Hora de llegada">Hora de llegada</label>
+            <input type="time" name="Hora de llegada" id="Hora de llegada">
+        </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </p>
+        <p>
+            <a href="index.html">Volver</a>
+        </p>
+        </form>
+    
+</body>
+</html>
